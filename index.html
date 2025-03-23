@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGIStar - AI产品排行榜</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>AGIStar</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#ranking">排行榜</a></li>
+                <li><a href="#news">AI资讯</a></li>
+                <li><a href="#about">关于我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container">
+            <h1>探索AI的无限可能</h1>
+            <p>发现最优秀的人工智能产品，助力您的数字化转型</p>
+            <a href="#ranking" class="cta-button">查看排行榜</a>
+        </div>
+        <div class="hero-shape-1"></div>
+        <div class="hero-shape-2"></div>
+    </header>
+
+    <main>
+        <section id="ranking" class="ranking-section">
+            <div class="container">
+                <h2>AI产品排行榜</h2>
+                <div class="ranking-filters">
+                    <button class="filter-btn active">全部</button>
+                    <button class="filter-btn">对话AI</button>
+                    <button class="filter-btn">图像生成</button>
+                    <button class="filter-btn">代码助手</button>
+                </div>
+                <div class="ranking-list">
+                    <!-- AI产品卡片 -->
+                    <div class="product-card">
+                        <span class="rank">1</span>
+                        <img src="https://via.placeholder.com/400x300/0f172a/ffffff?text=ChatGPT" alt="ChatGPT">
+                        <div class="product-info">
+                            <h3>ChatGPT</h3>
+                            <p class="category">对话AI</p>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">9.8</span>
+                            </div>
+                            <p class="description">领先的对话式AI助手，支持多语言交互和复杂任务处理。</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <span class="rank">2</span>
+                        <img src="https://via.placeholder.com/400x300/0f172a/ffffff?text=Midjourney" alt="Midjourney">
+                        <div class="product-info">
+                            <h3>Midjourney</h3>
+                            <p class="category">图像生成</p>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">9.6</span>
+                            </div>
+                            <p class="description">强大的AI图像生成工具，创造惊艳的艺术作品。</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <span class="rank">3</span>
+                        <img src="https://via.placeholder.com/400x300/0f172a/ffffff?text=GitHub+Copilot" alt="GitHub Copilot">
+                        <div class="product-info">
+                            <h3>GitHub Copilot</h3>
+                            <p class="category">代码助手</p>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">9.5</span>
+                            </div>
+                            <p class="description">AI驱动的编程助手，提高开发效率的得力工具。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <span class="rank">4</span>
+                        <img src="https://via.placeholder.com/400x300/0f172a/ffffff?text=DALL-E" alt="DALL-E">
+                        <div class="product-info">
+                            <h3>DALL-E</h3>
+                            <p class="category">图像生成</p>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="score">9.3</span>
+                            </div>
+                            <p class="description">OpenAI开发的文本到图像生成模型，创造高度逼真的图像。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <span class="rank">5</span>
+                        <img src="https://via.placeholder.com/400x300/0f172a/ffffff?text=Claude" alt="Claude">
+                        <div class="product-info">
+                            <h3>Claude</h3>
+                            <p class="category">对话AI</p>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="score">9.2</span>
+                            </div>
+                            <p class="description">Anthropic开发的AI助手，专注于有用、无害且诚实的回答。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <span class="rank">6</span>
+                        <img src="https://via.placeholder.com/400x300/0f172a/ffffff?text=Cursor" alt="Cursor">
+                        <div class="product-info">
+                            <h3>Cursor</h3>
+                            <p class="category">代码助手</p>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="score">9.0</span>
+                            </div>
+                            <p class="description">基于AI的代码编辑器，集成了先进的代码生成和编辑功能。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于AGIStar</h3>
+                    <p>我们致力于为用户提供最全面、最客观的AI产品评测和排名。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p>Email: contact@agistar.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AGIStar. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
