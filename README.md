@@ -32,4 +32,4 @@
 
 ## 预览
 
-访问 [AGIStar网站](https://github.com/yourusername/agistar) 查看在线演示。 
+访问 [AGIStar网站](https://github.com/willsmith2099/agistar) 查看在线演示。
