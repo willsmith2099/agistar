@@ -1,35 +1,103 @@
-# AGIStar - AI产品排行榜
+# AGIStar 后端服务
 
-一个现代化的AI产品排行榜网站，展示最前沿的人工智能产品和工具。
-
-## 项目特点
-
-- **现代化UI设计**：采用深色主题和玻璃态设计，呈现科技感
-- **动态视觉效果**：包含粒子背景、形态变化的几何图形和流畅的动画
-- **响应式布局**：完美适配各种屏幕尺寸
-- **交互功能**：产品分类筛选、滚动动画效果等
+AGIStar是一个AI产品排行榜平台，帮助用户发现和评估最新的AI工具和服务。
 
 ## 技术栈
 
-- HTML5
-- CSS3 (动画、渐变、玻璃态效果)
-- JavaScript (原生JS)
+- Node.js
+- Express.js
+- MySQL
+- Sequelize ORM
+- JWT认证
+- Winston日志
 
-## 运行方式
+## 开发环境配置
 
-1. 克隆仓库到本地
-2. 使用任意HTTP服务器运行，例如：
-   ```
-   python -m http.server 8000
-   ```
-3. 在浏览器中访问 `http://localhost:8000`
+### 先决条件
 
-## 产品分类
+- Node.js 14+
+- MySQL 5.7+
 
-- 对话AI
-- 图像生成
-- 代码助手
+### 安装依赖
 
-## 预览
+```bash
+npm install
+```
 
-访问 [AGIStar网站](https://github.com/willsmith2099/agistar) 查看在线演示。
+### 环境变量配置
+
+1. 复制环境变量示例文件
+```bash
+cp .env.example .env
+```
+
+2. 编辑 `.env` 文件，配置数据库连接信息和JWT密钥
+
+### 初始化数据库
+
+```bash
+npm run init-db
+```
+
+### 启动开发服务器
+
+```bash
+npm run dev
+```
+
+服务器默认在 http://localhost:3000 运行。API基础路径为 `/api/v1`。
+
+## API文档
+
+详细的API文档请参考 [api-docs.md](api-docs.md)。
+
+## 项目结构
+
+```
+src/
+├── app.js              # 应用入口文件
+├── config/             # 配置文件
+├── controllers/        # 控制器
+├── middlewares/        # 中间件
+├── models/             # 数据模型
+├── routes/             # 路由定义
+├── scripts/            # 脚本工具
+└── utils/              # 工具函数
+```
+
+## 功能特性
+
+- 用户认证（注册/登录）
+- AI产品分类与管理
+- 产品评分与评价
+- 分页与排序
+- 数据验证
+
+## 生产环境部署
+
+1. 安装依赖
+```bash
+npm install --production
+```
+
+2. 设置环境变量
+```bash
+export NODE_ENV=production
+export PORT=3000
+export DB_HOST=your_db_host
+export DB_USER=your_db_user
+export DB_PASSWORD=your_db_password
+export DB_NAME=agistar
+export JWT_SECRET=your_jwt_secret
+```
+
+3. 启动服务
+```bash
+npm start
+```
+
+建议使用PM2等进程管理工具来管理Node.js应用。
+
+## 授权协议
+
+MIT
